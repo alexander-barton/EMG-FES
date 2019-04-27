@@ -1,0 +1,11 @@
+Important commands:
+
+import openbci as bci
+
+#Establishes a new board listening at the specified port
+board = bci.OpenBCIGanglion(port="port",filter_data=?,scaled_output=T/F,log=?,aux=?)
+
+- the board class has several important methods and attributes
+i.e. board.start_streaming to get data
+NOTE: in the user.py file they place it in a thread (python module) look into this
+
